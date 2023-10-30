@@ -21,6 +21,8 @@ struct HomeView: View {
                 
                 homeHeader
                 
+                SearchBarView(searchText: $vm.searchText)
+                
                 columnTitle
                 
                 if !showPortfolio {
@@ -108,6 +110,6 @@ extension HomeView {
         }
         .font(.caption)
         .foregroundStyle(Color.theme.secondaryText)
-        .padding(.horizontal)
+        .padding(EdgeInsets(top: 10, leading: 10, bottom: 0, trailing: 10))
     }
 }
