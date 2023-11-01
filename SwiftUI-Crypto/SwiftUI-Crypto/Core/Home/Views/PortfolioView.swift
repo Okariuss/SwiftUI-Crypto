@@ -132,7 +132,7 @@ extension PortfolioView {
                 .opacity(showCheckMark ? 1.0 : 0.0)
             
             Button(action: {
-                
+                saveButtonPressed()
             }, label: {
                 Text("Save".uppercased())
             })
